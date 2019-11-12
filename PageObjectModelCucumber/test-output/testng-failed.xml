@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="5" name="Failed suite [CreateLead Test Automation Page Object Model Cucumber Suite]">
+  <parameter name="url" value="http://leaftaps.com/opentaps/control/main"/>
+  <test thread-count="5" verbose="5" name="CreateLead Test Automation Page Object Model Cucumber Test Cases(failed)">
+    <classes>
+      <class name="runner.CreateLeadRunner">
+        <methods>
+          <include name="login"/>
+          <include name="closeBrowser"/>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0 1"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- runner.CreateLeadRunner -->
+    </classes>
+  </test> <!-- CreateLead Test Automation Page Object Model Cucumber Test Cases(failed) -->
+</suite> <!-- Failed suite [CreateLead Test Automation Page Object Model Cucumber Suite] -->
