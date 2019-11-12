@@ -1,10 +1,11 @@
 package org.testleaf.qa.pages;
 
+import org.testleaf.qa.api.base.SeleniumBase;
 import org.testleaf.qa.baseAPI.ProjectSpecificMethods;
 
 import cucumber.api.java.en.When;
 
-public class MyLeadPage extends ProjectSpecificMethods{
+public class MyLeadPage extends SeleniumBase{
 
 	@When("Click on CreateLead button")
 	public CreateLeadPage clickOnCreateLead() {
@@ -14,6 +15,7 @@ public class MyLeadPage extends ProjectSpecificMethods{
 		
 	}
 	
+	@When("Click on find lead link")
 	public FindLeadPage clickOnFindLeads() {
 		
 		driver.findElementByXPath("//a[contains(text(),'Find Leads')]").click();

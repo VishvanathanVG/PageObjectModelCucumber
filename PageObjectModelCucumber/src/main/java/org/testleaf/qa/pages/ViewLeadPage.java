@@ -5,6 +5,7 @@ import org.testleaf.qa.api.base.SeleniumBase;
 import org.testleaf.qa.baseAPI.ProjectSpecificMethods;
 
 import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 
 public class ViewLeadPage extends SeleniumBase {
 
@@ -31,11 +32,13 @@ public class ViewLeadPage extends SeleniumBase {
 		return new MyHomePage();
 	}
 
+	@When("Click on edit button in view lead page")
 	public EditLeadPage clickOnEditInFindLeadPage() {
 		driver.findElementByXPath("//a[contains(text(),'Edit')]").click();
 		return new EditLeadPage();
 	}
 
+	@Then("Confirms the changed name as (.*)")
 	public ViewLeadPage verifyEditedLeadinViewLeadPage(String ExpectCompanyName) {
 
 		String companyNameUp = driver.findElementById("viewLead_companyName_sp").getText();
@@ -95,6 +98,13 @@ public class ViewLeadPage extends SeleniumBase {
 		driver.findElementByLinkText("Find Leads").click();
 
 		return new FindLeadPage();
+	}
+	
+	@Then("Verify the title page of view lead page")
+	public void viewLeadPageTitleVerify() {
+		
+		verifyTitle("View Lead | opentaps CRM");
+		
 	}
 
 }

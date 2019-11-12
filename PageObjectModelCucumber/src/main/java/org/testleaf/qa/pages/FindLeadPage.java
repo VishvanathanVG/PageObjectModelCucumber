@@ -1,11 +1,14 @@
 package org.testleaf.qa.pages;
 
 import org.openqa.selenium.WebElement;
-import org.testleaf.qa.baseAPI.ProjectSpecificMethods;
+import org.testleaf.qa.api.base.SeleniumBase;
 
-public class FindLeadPage extends ProjectSpecificMethods {
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 
-	
+public class FindLeadPage extends SeleniumBase {
+
+	@When("Enter the firstname in the find lead page as (.*)")
 	public FindLeadPage enterFirstNameinFindLeadPage(String firstname) {
 
 		driver.findElementByXPath("((//label[text()='First name:'])[3]/following::input)[1]").sendKeys(firstname);
@@ -18,15 +21,16 @@ public class FindLeadPage extends ProjectSpecificMethods {
 		return this;
 	}
 	
+	@When("Click on find lead button in find lead page")
 	public FindLeadPage clickOnFindLeadBtnFindLeadPage() {
 
 		driver.findElementByXPath("//button[contains(text(),'Find Leads')]").click();
 		return this;
 	}
 	
-
-	public ViewLeadPage selectFirstListedFindLeadsData() {
-		
+	@Then("Select the first resulting lead id")
+	public ViewLeadPage selectFirstListedFindLeadsData() throws InterruptedException {
+		Thread.sleep(2000);
 		WebElement firtLead= driver.findElementByXPath("//div[@class='x-grid3-cell-inner x-grid3-col-partyId']//a[1]");
 		String leadid=firtLead.getText();
 		leadId =leadid;

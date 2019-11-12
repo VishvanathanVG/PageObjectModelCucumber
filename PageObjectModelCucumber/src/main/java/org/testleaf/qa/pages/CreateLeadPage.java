@@ -14,7 +14,7 @@ import org.testleaf.qa.baseAPI.ProjectSpecificMethods;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class CreateLeadPage extends ProjectSpecificMethods {
+public class CreateLeadPage extends SeleniumBase {
 
 	@When("Enter the companyname as (.*)")
 	public CreateLeadPage enterCompanyName(String companyName) {
