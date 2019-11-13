@@ -3,17 +3,17 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-11-12T18:05:17.131Z",
-        "line": 22,
-        "name": "Edit Lead Positive Test Cases",
+        "start_timestamp": "2019-11-13T18:18:10.723Z",
+        "line": 24,
+        "name": "Delete Lead Test Cases",
         "description": "",
-        "id": "edit-lead-test-scenarios;edit-lead-positive-test-cases;;2",
+        "id": "delete-lead-test-scenario;delete-lead-test-cases;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 436425752,
+              "duration": 318367580,
               "status": "passed"
             },
             "line": 5,
@@ -31,7 +31,7 @@
           },
           {
             "result": {
-              "duration": 147556577,
+              "duration": 151071649,
               "status": "passed"
             },
             "line": 6,
@@ -49,7 +49,7 @@
           },
           {
             "result": {
-              "duration": 387953432,
+              "duration": 368154170,
               "status": "passed"
             },
             "line": 7,
@@ -61,7 +61,7 @@
           },
           {
             "result": {
-              "duration": 3064855680,
+              "duration": 3834826474,
               "status": "passed"
             },
             "line": 8,
@@ -73,7 +73,7 @@
           },
           {
             "result": {
-              "duration": 1806151365,
+              "duration": 1493556225,
               "status": "passed"
             },
             "line": 9,
@@ -85,7 +85,7 @@
           },
           {
             "result": {
-              "duration": 1625058345,
+              "duration": 1136536261,
               "status": "passed"
             },
             "line": 10,
@@ -93,32 +93,56 @@
             "match": {
               "location": "MyLeadPage.clickOnFindLeads()"
             },
-            "keyword": "And "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 406348742,
+              "duration": 244603162,
               "status": "passed"
             },
             "line": 11,
-            "name": "Enter the firstname in the find lead page as Vishvanathan",
+            "name": "Click on Email button in find lead page",
             "match": {
-              "arguments": [
-                {
-                  "val": "Vishvanathan",
-                  "offset": 45
-                }
-              ],
-              "location": "FindLeadPage.enterFirstNameinFindLeadPage(String)"
+              "location": "FindLeadPage.clickOnEmailInFindLeadPage()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 144079900,
+              "duration": 116257655,
               "status": "passed"
             },
             "line": 12,
+            "name": "Click on phone number",
+            "match": {
+              "location": "FindLeadPage.clickOnPhoneNoInFindLeadPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 88268607,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Enter the phone number as 99 in find lead page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "99",
+                  "offset": 26
+                }
+              ],
+              "location": "FindLeadPage.enterPhoneNoInFindLeadPage(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 90539210,
+              "status": "passed"
+            },
+            "line": 14,
             "name": "Click on find lead button in find lead page",
             "match": {
               "location": "FindLeadPage.clickOnFindLeadBtnFindLeadPage()"
@@ -127,10 +151,10 @@
           },
           {
             "result": {
-              "duration": 3878266235,
+              "duration": 4112512454,
               "status": "passed"
             },
-            "line": 13,
+            "line": 15,
             "name": "Select the first resulting lead id",
             "match": {
               "location": "FindLeadPage.selectFirstListedFindLeadsData()"
@@ -139,90 +163,84 @@
           },
           {
             "result": {
-              "duration": 37737274,
+              "duration": 2327619948,
               "status": "passed"
             },
-            "line": 14,
-            "name": "Verify the title page of view lead page",
+            "line": 16,
+            "name": "Click on delete button",
             "match": {
-              "location": "ViewLeadPage.viewLeadPageTitleVerify()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1711035995,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "Click on edit button in view lead page",
-            "match": {
-              "location": "ViewLeadPage.clickOnEditInFindLeadPage()"
+              "location": "ViewLeadPage.clickOnDeleteLeadBtnInViewLeadPage()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 901584066,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "Change the company name as TATA Consultancy Services Limited in edit lead page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "TATA Consultancy Services Limited",
-                  "offset": 27
-                }
-              ],
-              "location": "EditLeadPage.enterChangeCompanyNameInEditLeadPage(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2349870502,
+              "duration": 1856711456,
               "status": "passed"
             },
             "line": 17,
-            "name": "Click on submit button",
+            "name": "Click on find lead link",
             "match": {
-              "location": "EditLeadPage.clickOnUpdateBtnInEditLeadPage()"
+              "location": "MyLeadPage.clickOnFindLeads()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 192573566,
+              "duration": 355051096,
               "status": "passed"
             },
             "line": 18,
-            "name": "Confirms the changed name as TATA Consultancy Services Limited",
+            "name": "Enter the captured lead id in find lead page",
+            "match": {
+              "location": "FindLeadPage.enterLeadIdInFindLeadPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 160853182,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Click on find lead button in find lead page",
+            "match": {
+              "location": "FindLeadPage.clickOnFindLeadBtnFindLeadPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 192715516,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Verify the norecords display message as No",
             "match": {
               "arguments": [
                 {
-                  "val": "TATA Consultancy Services Limited",
-                  "offset": 29
+                  "val": "No",
+                  "offset": 40
                 }
               ],
-              "location": "ViewLeadPage.verifyEditedLeadinViewLeadPage(String)"
+              "location": "FindLeadPage.verifyNoRecordsDisplayInFindLeadPage(String)"
             },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2019-11-12T18:05:42.308Z",
-        "line": 23,
-        "name": "Edit Lead Positive Test Cases",
+        "start_timestamp": "2019-11-13T18:18:35.757Z",
+        "line": 25,
+        "name": "Delete Lead Test Cases",
         "description": "",
-        "id": "edit-lead-test-scenarios;edit-lead-positive-test-cases;;3",
+        "id": "delete-lead-test-scenario;delete-lead-test-cases;;3",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 285941771,
+              "duration": 283214083,
               "status": "passed"
             },
             "line": 5,
@@ -240,7 +258,7 @@
           },
           {
             "result": {
-              "duration": 164342246,
+              "duration": 157075960,
               "status": "passed"
             },
             "line": 6,
@@ -258,7 +276,7 @@
           },
           {
             "result": {
-              "duration": 487741728,
+              "duration": 440668956,
               "status": "passed"
             },
             "line": 7,
@@ -270,7 +288,7 @@
           },
           {
             "result": {
-              "duration": 2718198302,
+              "duration": 2804974061,
               "status": "passed"
             },
             "line": 8,
@@ -282,7 +300,7 @@
           },
           {
             "result": {
-              "duration": 1587131001,
+              "duration": 2466353328,
               "status": "passed"
             },
             "line": 9,
@@ -294,7 +312,7 @@
           },
           {
             "result": {
-              "duration": 987745218,
+              "duration": 1333752751,
               "status": "passed"
             },
             "line": 10,
@@ -302,241 +320,116 @@
             "match": {
               "location": "MyLeadPage.clickOnFindLeads()"
             },
-            "keyword": "And "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 282101786,
+              "duration": 335327928,
               "status": "passed"
             },
             "line": 11,
-            "name": "Enter the firstname in the find lead page as Vishvanathan",
+            "name": "Click on Email button in find lead page",
             "match": {
-              "arguments": [
-                {
-                  "val": "Vishvanathan",
-                  "offset": 45
-                }
-              ],
-              "location": "FindLeadPage.enterFirstNameinFindLeadPage(String)"
+              "location": "FindLeadPage.clickOnEmailInFindLeadPage()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 101702541,
+              "duration": 118820961,
               "status": "passed"
             },
             "line": 12,
-            "name": "Click on find lead button in find lead page",
+            "name": "Click on phone number",
             "match": {
-              "location": "FindLeadPage.clickOnFindLeadBtnFindLeadPage()"
+              "location": "FindLeadPage.clickOnPhoneNoInFindLeadPage()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3683135552,
+              "duration": 99742725,
               "status": "passed"
             },
             "line": 13,
-            "name": "Select the first resulting lead id",
+            "name": "Enter the phone number as 1 in find lead page",
             "match": {
-              "location": "FindLeadPage.selectFirstListedFindLeadsData()"
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 26
+                }
+              ],
+              "location": "FindLeadPage.enterPhoneNoInFindLeadPage(String)"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 44981275,
+              "duration": 120161319,
               "status": "passed"
             },
             "line": 14,
-            "name": "Verify the title page of view lead page",
+            "name": "Click on find lead button in find lead page",
             "match": {
-              "location": "ViewLeadPage.viewLeadPageTitleVerify()"
+              "location": "FindLeadPage.clickOnFindLeadBtnFindLeadPage()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 1598303248,
+              "duration": 4161576524,
               "status": "passed"
             },
             "line": 15,
-            "name": "Click on edit button in view lead page",
+            "name": "Select the first resulting lead id",
             "match": {
-              "location": "ViewLeadPage.clickOnEditInFindLeadPage()"
+              "location": "FindLeadPage.selectFirstListedFindLeadsData()"
             },
-            "keyword": "When "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 371407916,
+              "duration": 1931592086,
               "status": "passed"
             },
             "line": 16,
-            "name": "Change the company name as TCS in edit lead page",
+            "name": "Click on delete button",
             "match": {
-              "arguments": [
-                {
-                  "val": "TCS",
-                  "offset": 27
-                }
-              ],
-              "location": "EditLeadPage.enterChangeCompanyNameInEditLeadPage(String)"
+              "location": "ViewLeadPage.clickOnDeleteLeadBtnInViewLeadPage()"
             },
-            "keyword": "And "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 2371244940,
+              "duration": 1603433532,
               "status": "passed"
             },
             "line": 17,
-            "name": "Click on submit button",
+            "name": "Click on find lead link",
             "match": {
-              "location": "EditLeadPage.clickOnUpdateBtnInEditLeadPage()"
+              "location": "MyLeadPage.clickOnFindLeads()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 261709717,
+              "duration": 367748983,
               "status": "passed"
             },
             "line": 18,
-            "name": "Confirms the changed name as TCS",
+            "name": "Enter the captured lead id in find lead page",
             "match": {
-              "arguments": [
-                {
-                  "val": "TCS",
-                  "offset": 29
-                }
-              ],
-              "location": "ViewLeadPage.verifyEditedLeadinViewLeadPage(String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-11-12T18:06:04.930Z",
-        "line": 45,
-        "name": "Edit Lead Negative Test Cases",
-        "description": "",
-        "id": "edit-lead-test-scenarios;edit-lead-negative-test-cases;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 317193272,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "Enter the username as DemoSalesManager",
-            "match": {
-              "arguments": [
-                {
-                  "val": "DemoSalesManager",
-                  "offset": 22
-                }
-              ],
-              "location": "LoginPage.enterUserName(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 157469354,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "Enter the password as crmsfa",
-            "match": {
-              "arguments": [
-                {
-                  "val": "crmsfa",
-                  "offset": 22
-                }
-              ],
-              "location": "LoginPage.enterPassword(String)"
+              "location": "FindLeadPage.enterLeadIdInFindLeadPage()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 430151395,
+              "duration": 144521755,
               "status": "passed"
             },
-            "line": 29,
-            "name": "Click on login button",
-            "match": {
-              "location": "LoginPage.clickOnLogin()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 4083535890,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "Click on Crmsfa",
-            "match": {
-              "location": "HomePage.clickOnCRMSFA()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1639528692,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "Click on lead link",
-            "match": {
-              "location": "MyHomePage.clickOnLead()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1313649271,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "Click on find lead link",
-            "match": {
-              "location": "MyLeadPage.clickOnFindLeads()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 353150541,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "Enter the firstname in the find lead page as Vishvanathan",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Vishvanathan",
-                  "offset": 45
-                }
-              ],
-              "location": "FindLeadPage.enterFirstNameinFindLeadPage(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 100888484,
-              "status": "passed"
-            },
-            "line": 34,
+            "line": 19,
             "name": "Click on find lead button in find lead page",
             "match": {
               "location": "FindLeadPage.clickOnFindLeadBtnFindLeadPage()"
@@ -545,305 +438,30 @@
           },
           {
             "result": {
-              "duration": 3822642693,
+              "duration": 143217523,
               "status": "passed"
             },
-            "line": 35,
-            "name": "Select the first resulting lead id",
+            "line": 20,
+            "name": "Verify the norecords display message as No",
             "match": {
-              "location": "FindLeadPage.selectFirstListedFindLeadsData()"
+              "arguments": [
+                {
+                  "val": "No",
+                  "offset": 40
+                }
+              ],
+              "location": "FindLeadPage.verifyNoRecordsDisplayInFindLeadPage(String)"
             },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 43089197,
-              "status": "passed"
-            },
-            "line": 36,
-            "name": "Verify the title page of view lead page",
-            "match": {
-              "location": "ViewLeadPage.viewLeadPageTitleVerify()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1433080851,
-              "status": "passed"
-            },
-            "line": 37,
-            "name": "Click on edit button in view lead page",
-            "match": {
-              "location": "ViewLeadPage.clickOnEditInFindLeadPage()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 700026724,
-              "status": "passed"
-            },
-            "line": 38,
-            "name": "Change the company name as TATA Consultancy Services Limited in edit lead page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "TATA Consultancy Services Limited",
-                  "offset": 27
-                }
-              ],
-              "location": "EditLeadPage.enterChangeCompanyNameInEditLeadPage(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1572755072,
-              "status": "passed"
-            },
-            "line": 39,
-            "name": "Click on submit button",
-            "match": {
-              "location": "EditLeadPage.clickOnUpdateBtnInEditLeadPage()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 183467867,
-              "status": "passed"
-            },
-            "line": 40,
-            "name": "Confirms the changed name as TCS",
-            "match": {
-              "arguments": [
-                {
-                  "val": "TCS",
-                  "offset": 29
-                }
-              ],
-              "location": "ViewLeadPage.verifyEditedLeadinViewLeadPage(String)"
-            },
-            "keyword": "But "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-11-12T18:06:28.906Z",
-        "line": 46,
-        "name": "Edit Lead Negative Test Cases",
-        "description": "",
-        "id": "edit-lead-test-scenarios;edit-lead-negative-test-cases;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 302786965,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "Enter the username as DemoSalesManager",
-            "match": {
-              "arguments": [
-                {
-                  "val": "DemoSalesManager",
-                  "offset": 22
-                }
-              ],
-              "location": "LoginPage.enterUserName(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 152625242,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "Enter the password as crmsfa",
-            "match": {
-              "arguments": [
-                {
-                  "val": "crmsfa",
-                  "offset": 22
-                }
-              ],
-              "location": "LoginPage.enterPassword(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 412479417,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "Click on login button",
-            "match": {
-              "location": "LoginPage.clickOnLogin()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2777918403,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "Click on Crmsfa",
-            "match": {
-              "location": "HomePage.clickOnCRMSFA()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2048725198,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "Click on lead link",
-            "match": {
-              "location": "MyHomePage.clickOnLead()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1547282843,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "Click on find lead link",
-            "match": {
-              "location": "MyLeadPage.clickOnFindLeads()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 424083119,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "Enter the firstname in the find lead page as Vishvanathan",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Vishvanathan",
-                  "offset": 45
-                }
-              ],
-              "location": "FindLeadPage.enterFirstNameinFindLeadPage(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 127669855,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "Click on find lead button in find lead page",
-            "match": {
-              "location": "FindLeadPage.clickOnFindLeadBtnFindLeadPage()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3888606361,
-              "status": "passed"
-            },
-            "line": 35,
-            "name": "Select the first resulting lead id",
-            "match": {
-              "location": "FindLeadPage.selectFirstListedFindLeadsData()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 55514345,
-              "status": "passed"
-            },
-            "line": 36,
-            "name": "Verify the title page of view lead page",
-            "match": {
-              "location": "ViewLeadPage.viewLeadPageTitleVerify()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1374584504,
-              "status": "passed"
-            },
-            "line": 37,
-            "name": "Click on edit button in view lead page",
-            "match": {
-              "location": "ViewLeadPage.clickOnEditInFindLeadPage()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 361127725,
-              "status": "passed"
-            },
-            "line": 38,
-            "name": "Change the company name as TCS in edit lead page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "TCS",
-                  "offset": 27
-                }
-              ],
-              "location": "EditLeadPage.enterChangeCompanyNameInEditLeadPage(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1662230747,
-              "status": "passed"
-            },
-            "line": 39,
-            "name": "Click on submit button",
-            "match": {
-              "location": "EditLeadPage.clickOnUpdateBtnInEditLeadPage()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 132448284,
-              "status": "passed"
-            },
-            "line": 40,
-            "name": "Confirms the changed name as TATA Consultancy Services Limited",
-            "match": {
-              "arguments": [
-                {
-                  "val": "TATA Consultancy Services Limited",
-                  "offset": 29
-                }
-              ],
-              "location": "ViewLeadPage.verifyEditedLeadinViewLeadPage(String)"
-            },
-            "keyword": "But "
           }
         ]
       }
     ],
-    "name": "Edit Lead Test Scenarios",
+    "name": "Delete Lead Test Scenario",
     "description": "",
-    "id": "edit-lead-test-scenarios",
+    "id": "delete-lead-test-scenario",
     "keyword": "Feature",
-    "uri": "file:src/test/java/featuresExamples/EditLeadScenarioOutline.feature",
+    "uri": "file:src/test/java/featuresExamples/DeleteLeadScenarioOutline.feature",
     "tags": []
   }
 ]
