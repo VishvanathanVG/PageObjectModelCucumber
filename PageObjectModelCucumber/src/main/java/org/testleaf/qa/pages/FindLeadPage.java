@@ -15,6 +15,7 @@ public class FindLeadPage extends SeleniumBase {
 		return this;
 	}
 
+	@When("Enter the captured lead id in find lead page")
 	public FindLeadPage enterLeadIdInFindLeadPage() {
 		
 		driver.findElementByXPath("//label[contains(text(), 'Lead ID:')]/following::input[1]").sendKeys(leadId);
@@ -39,6 +40,7 @@ public class FindLeadPage extends SeleniumBase {
 		return new ViewLeadPage();
 	}
 	
+	@When("Click on Email button in find lead page")
 	public FindLeadPage clickOnEmailInFindLeadPage() {
 		
 		driver.findElementByXPath("//span[contains(text(),'Email')]").click();
@@ -46,7 +48,7 @@ public class FindLeadPage extends SeleniumBase {
 		return this;
 	}
 	
-	
+	@When("Enter the email id as (.*) in find lead page")
 	public FindLeadPage enterEmailAddressInFindLeadPage(String Emailaddr ) {
 		
 		driver.findElementByName("emailAddress").sendKeys(Emailaddr);
@@ -54,8 +56,9 @@ public class FindLeadPage extends SeleniumBase {
 		return this;
 	}
 	
-	public ViewLeadPage captureFirstResultingNameAndSelectInFindLeadPage() {
-		
+	@When("Capture the name of first resulting lead")
+	public ViewLeadPage captureFirstResultingNameAndSelectInFindLeadPage() throws InterruptedException {
+		Thread.sleep(2000);
 		WebElement name =driver.findElementByXPath("(//div[@class='x-grid3-cell-inner x-grid3-col-firstName']/a)[1]");
 		String Name=name.getText();
 		firstResultingName=Name;
@@ -64,6 +67,7 @@ public class FindLeadPage extends SeleniumBase {
 		return new ViewLeadPage();
 	}
 	
+	@When("Click on phone number")
 	public FindLeadPage clickOnPhoneNoInFindLeadPage() {
 		
 		driver.findElementByXPath("//span[contains(text(),'Phone')]").click();
@@ -71,17 +75,18 @@ public class FindLeadPage extends SeleniumBase {
 		return this;
 	}
 	
+	@When("Enter the phone number as (.*) in find lead page")
 	public FindLeadPage enterPhoneNoInFindLeadPage(String Phonenumber) {
 		
 		driver.findElementByName("phoneNumber").sendKeys(Phonenumber);
 		return this;
 	}
 	
-	
-	public FindLeadPage verifyNoRecordsDisplayInFindLeadPage() {
+	@Then("Verify the norecords display message as (.*)")
+	public FindLeadPage verifyNoRecordsDisplayInFindLeadPage(String norecord) {
 		
 		String norecords=driver.findElementByXPath("//div[contains(text(),'No records to display')]").getText();
-		if(norecords.startsWith("No")) {
+		if(norecords.contains(norecord)) {
 			System.out.println("Your message is :" + norecords + " and This message confirm the successful deletion");
 	    }
 		else {

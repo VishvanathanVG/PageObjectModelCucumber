@@ -5,7 +5,9 @@
   <test thread-count="5" name="CreateLead Test Automation Page Object Model Cucumber Test Cases">
     <classes>
      <!--  <class name="runner.CreateLeadRunner"/> -->
-      <class name="runner.EditLeadRunner"/>
+      <!-- <class name="runner.EditLeadRunner"/> -->
+      <!-- <class name="runner.DuplicateLeadRunner"/> -->
+       <class name="runner.DeleteLeadRunner"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

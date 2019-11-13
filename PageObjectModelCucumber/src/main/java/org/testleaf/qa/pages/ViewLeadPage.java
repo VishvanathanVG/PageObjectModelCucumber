@@ -51,6 +51,7 @@ public class ViewLeadPage extends SeleniumBase {
 		return this;
 	}
 
+	@When("Click on Duplicate lead button in view lead page")
 	public DuplicateLeadPage clickOnDuplicateLeadBtnInViewLeadPage() {
 
 		driver.findElementByXPath("//a[contains(text(),'Duplicate Lead')]").click();
@@ -58,6 +59,7 @@ public class ViewLeadPage extends SeleniumBase {
 		return new DuplicateLeadPage();
 	}
 
+	@When("Click on delete button")
 	public MyLeadPage clickOnDeleteLeadBtnInViewLeadPage() {
 
 		driver.findElementByXPath("//a[text() ='Delete']").click();
@@ -65,6 +67,7 @@ public class ViewLeadPage extends SeleniumBase {
 		return new MyLeadPage();
 	}
 
+	@Then("Confirm the duplicated lead name as captured name")
 	public ViewLeadPage verifyDuplicatedLeadNameinViewLeadPage() {
 
 		String firstName = driver.findElementById("viewLead_firstName_sp").getText();

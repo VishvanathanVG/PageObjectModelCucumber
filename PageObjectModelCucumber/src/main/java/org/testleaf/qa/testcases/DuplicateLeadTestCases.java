@@ -16,7 +16,7 @@ public class DuplicateLeadTestCases extends ProjectSpecificMethods {
 	}
 
 	@Test(dataProvider="fetchLeadsData")
-	public void runDuplicateLeadTestCases(String userName, String passWord, String Emailaddr) throws InterruptedException {
+	public void runDuplicateLeadTestCases(String userName, String passWord, String Emailaddr,String duplicate) throws InterruptedException {
 
 		LoginPage loginpage = new LoginPage();
 		loginpage.enterUserName(userName).enterPassword(passWord).clickOnLogin().clickOnCRMSFA().clickOnLead()
@@ -25,7 +25,7 @@ public class DuplicateLeadTestCases extends ProjectSpecificMethods {
 					Thread.sleep(2000);
 		FindLeadPage findleadpage = new FindLeadPage();
 		findleadpage.captureFirstResultingNameAndSelectInFindLeadPage()
-				.clickOnDuplicateLeadBtnInViewLeadPage().verifyTitleDuplicateLeadPage()
+				.clickOnDuplicateLeadBtnInViewLeadPage().verifyTitleDuplicateLeadPage(duplicate )
 				.clickOnSubmitBtnInDuplicateLeadPage().verifyDuplicatedLeadNameinViewLeadPage();
 	}
 

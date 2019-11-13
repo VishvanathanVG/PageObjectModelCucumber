@@ -16,7 +16,7 @@ public class DeleteLeadTestCases extends ProjectSpecificMethods{
 	}
 	
 	@Test(dataProvider="fetchLeadsData")
-	public void runDeleteLeadTestCases(String userName,String passWord,String PhoneNumber ) throws InterruptedException {
+	public void runDeleteLeadTestCases(String userName,String passWord,String PhoneNumber, String norecord) throws InterruptedException {
 		
 		LoginPage loginpage = new LoginPage();
 		loginpage.enterUserName(userName).enterPassword(passWord).clickOnLogin().clickOnCRMSFA()
@@ -24,7 +24,7 @@ public class DeleteLeadTestCases extends ProjectSpecificMethods{
 		Thread.sleep(2000);
 		FindLeadPage findleadpage = new FindLeadPage();
 		findleadpage.selectFirstListedFindLeadsData().clickOnDeleteLeadBtnInViewLeadPage().clickOnFindLeads()
-		.enterLeadIdInFindLeadPage().clickOnFindLeadBtnFindLeadPage().verifyNoRecordsDisplayInFindLeadPage();
+		.enterLeadIdInFindLeadPage().clickOnFindLeadBtnFindLeadPage().verifyNoRecordsDisplayInFindLeadPage(norecord);
 		
 		
 	}

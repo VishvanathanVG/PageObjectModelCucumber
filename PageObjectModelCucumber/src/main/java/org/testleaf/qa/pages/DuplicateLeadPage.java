@@ -1,13 +1,17 @@
 package org.testleaf.qa.pages;
 
-import org.testleaf.qa.baseAPI.ProjectSpecificMethods;
+import org.testleaf.qa.api.base.SeleniumBase;
 
-public class DuplicateLeadPage extends ProjectSpecificMethods{
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 
-	public DuplicateLeadPage verifyTitleDuplicateLeadPage() {
+public class DuplicateLeadPage extends SeleniumBase{
+
+	@Then("Verify the duplicate lead page titles as (.*)")
+	public DuplicateLeadPage verifyTitleDuplicateLeadPage(String duplicate) {
 		
 		String dupTitle=driver.getTitle();
-		if(dupTitle.startsWith("Duplicate")) {
+		if(dupTitle.startsWith(duplicate)) {
 			System.out.println("Your title is: " + dupTitle + " And your title is correct");
 			}
 		else {
@@ -17,6 +21,7 @@ public class DuplicateLeadPage extends ProjectSpecificMethods{
 		return this;
 	}
 	
+	@When("Click on the create lead button")
 	public ViewLeadPage clickOnSubmitBtnInDuplicateLeadPage() {
 		
 		driver.findElementByName("submitButton").click();
