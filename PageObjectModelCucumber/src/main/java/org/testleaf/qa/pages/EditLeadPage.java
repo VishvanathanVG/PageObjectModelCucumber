@@ -11,15 +11,20 @@ public class EditLeadPage extends SeleniumBase{
 	@When("Change the company name as (.*) in edit lead page")
 	public EditLeadPage enterChangeCompanyNameInEditLeadPage(String companyname) {
 		CompanyNameUpdated =companyname;
-		WebElement companyName = driver.findElementById("updateLeadForm_companyName");
+	/*	WebElement companyName = driver.findElementById("updateLeadForm_companyName");
 		companyName.clear();
-		companyName.sendKeys(companyname);
+		companyName.sendKeys(companyname);*/
+		WebElement companyName = locateElement("id", "updateLeadForm_companyName");
+		clearAndType(companyName,companyname );
+
 		return this;
 	}
 	
 	@When("Click on submit button")
 	public ViewLeadPage clickOnUpdateBtnInEditLeadPage() {
-		driver.findElementByName("submitButton").click();
+		
+		click(locateElement("name", "submitButton"));
+		//driver.findElementByName("submitButton").click();
 		return new ViewLeadPage();
 	}
 	

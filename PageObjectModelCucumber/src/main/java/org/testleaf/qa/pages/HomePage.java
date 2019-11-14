@@ -9,8 +9,8 @@ public class HomePage extends SeleniumBase {
 
 	public LoginPage clickOnLogout() {
 		
-		//click(locateElement("class", "decorativeSubmit"));
-		driver.findElementByClassName("decorativeSubmit").click();
+		click(locateElement("class", "decorativeSubmit"));
+		//driver.findElementByClassName("decorativeSubmit").click();
 		
 		return new LoginPage();
 	}
@@ -18,8 +18,8 @@ public class HomePage extends SeleniumBase {
 	@When("Click on Crmsfa")
 	public MyHomePage clickOnCRMSFA() {
 		
-		//click(locateElement("partial", "CRM/SFA"));
-		driver.findElementByPartialLinkText("CRM/SFA").click();
+		click(locateElement("partial", "CRM/SFA"));
+		//driver.findElementByPartialLinkText("CRM/SFA").click();
 		return new MyHomePage();
 		
 	}

@@ -10,7 +10,8 @@ public class MyLeadPage extends SeleniumBase{
 	@When("Click on CreateLead button")
 	public CreateLeadPage clickOnCreateLead() {
 		
-		driver.findElementByLinkText("Create Lead").click();
+		click(locateElement("link", "Create Lead"));
+		//driver.findElementByLinkText("Create Lead").click();
 		return new CreateLeadPage();
 		
 	}
@@ -18,7 +19,8 @@ public class MyLeadPage extends SeleniumBase{
 	@When("Click on find lead link")
 	public FindLeadPage clickOnFindLeads() {
 		
-		driver.findElementByXPath("//a[contains(text(),'Find Leads')]").click();
+		click(locateElement("xpath", "//a[contains(text(),'Find Leads')]"));
+		//driver.findElementByXPath("//a[contains(text(),'Find Leads')]").click();
 		
 		return new FindLeadPage();
 	}
@@ -26,7 +28,8 @@ public class MyLeadPage extends SeleniumBase{
 	@When("Click on merge lead links")
 	public MergeLeadPage clickOnMergeLead() {
 		
-		driver.findElementByLinkText("Merge Leads").click();
+		click(locateElement("link", "Merge Leads"));
+		//driver.findElementByLinkText("Merge Leads").click();
 		return new MergeLeadPage();
 	}
 	

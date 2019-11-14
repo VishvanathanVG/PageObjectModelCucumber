@@ -38,7 +38,7 @@ public class ProjectSpecificMethods extends SeleniumBase{
 	@AfterMethod
 	public void closeBrowser() {
 		
-		driver.close();
+		close();
 		
 	}
 	

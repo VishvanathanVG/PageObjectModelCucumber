@@ -20,8 +20,8 @@ public class CreateLeadPage extends SeleniumBase {
 	public CreateLeadPage enterCompanyName(String companyName) {
 		//WebElement ele =locateElement("id", "createLeadForm_companyName");
 		//clearAndType(ele, companyName);
-		//clearAndType(locateElement("id", "createLeadForm_companyName"), companyName);
-		driver.findElementById("createLeadForm_companyName").sendKeys(companyName);
+		clearAndType(locateElement("id", "createLeadForm_companyName"), companyName);
+		//driver.findElementById("createLeadForm_companyName").sendKeys(companyName);
 
 		return this;
 	}
@@ -29,17 +29,17 @@ public class CreateLeadPage extends SeleniumBase {
 	@When("Enter the firstname as (.*)")
 	public CreateLeadPage enterFirstName(String firstname) {
 		Firstname = firstname;
-		//clearAndType(locateElement("id", "createLeadForm_firstName"), firstname);
-		driver.findElementById("createLeadForm_firstName").sendKeys(firstname);
+		clearAndType(locateElement("id", "createLeadForm_firstName"), firstname);
+		//driver.findElementById("createLeadForm_firstName").sendKeys(firstname);
 		return this;
 	}
 
 	@When("Enter the lastname as (.*)")
 	public CreateLeadPage enterLastName(String lastName) {
 		
-		//clearAndType(locateElement("id", "createLeadForm_lastName"), lastName);
+		clearAndType(locateElement("id", "createLeadForm_lastName"), lastName);
 		
-		driver.findElementById("createLeadForm_lastName").sendKeys(lastName);
+		//driver.findElementById("createLeadForm_lastName").sendKeys(lastName);
 		return this;
 
 	}
@@ -47,8 +47,8 @@ public class CreateLeadPage extends SeleniumBase {
 	@Then("Click on CreateSubmitt button")
 	public ViewLeadPage clickCreateLeadSubmit() {
 	
-		//click(locateElement("name", "submitButton"));
-		driver.findElementByName("submitButton").click();
+		click(locateElement("name", "submitButton"));
+		//driver.findElementByName("submitButton").click();
 		return new ViewLeadPage();
 	}
 }

@@ -12,15 +12,15 @@ public class ViewLeadPage extends SeleniumBase {
 	@Then("Verify the leadname as (.*)")
 	public ViewLeadPage verifyViewLead(String expectedFirstName) {
 		
-		//verifyPartialText(locateElement("id", "viewLead_firstName_sp"), expectedFirstName);
-	String firstName =driver.findElementById("viewLead_firstName_sp").getText();
+	verifyPartialText(locateElement("id", "viewLead_firstName_sp"), expectedFirstName);
+	/*String firstName =driver.findElementById("viewLead_firstName_sp").getText();
 	if(firstName.contains(expectedFirstName)) {
 		System.out.println("My first name is :" + firstName + " and firstname is correct");
 	}
 	else
 	{
 		System.out.println("My first name is :" + firstName + " and firstname is incorrect");
-	}
+	}*/
 	
 	return this;
 	
@@ -28,41 +28,46 @@ public class ViewLeadPage extends SeleniumBase {
 
 	public MyHomePage clickOnMyHome() {
 
-		driver.findElementByLinkText("My Home").click();
+		click(locateElement("link", "My Home"));
+		//driver.findElementByLinkText("My Home").click();
 		return new MyHomePage();
 	}
 
 	@When("Click on edit button in view lead page")
 	public EditLeadPage clickOnEditInFindLeadPage() {
-		driver.findElementByXPath("//a[contains(text(),'Edit')]").click();
+		
+		click(locateElement("xpath", "//a[contains(text(),'Edit')]"));
+		//driver.findElementByXPath("//a[contains(text(),'Edit')]").click();
 		return new EditLeadPage();
 	}
 
 	@Then("Confirms the changed name as (.*)")
 	public ViewLeadPage verifyEditedLeadinViewLeadPage(String ExpectCompanyName) {
 
-		String companyNameUp = driver.findElementById("viewLead_companyName_sp").getText();
+		verifyPartialText(locateElement("id", "viewLead_companyName_sp"), ExpectCompanyName);
+		/*String companyNameUp = driver.findElementById("viewLead_companyName_sp").getText();
 		if (companyNameUp.contains(ExpectCompanyName)) {
 			System.out.println("Your company name is " + companyNameUp + " and it is correct");
 		} else {
 			System.out.println("Your company name is " + companyNameUp + " and it is incorrect");
 		}
-
+*/
 		return this;
 	}
 
 	@When("Click on Duplicate lead button in view lead page")
 	public DuplicateLeadPage clickOnDuplicateLeadBtnInViewLeadPage() {
 
-		driver.findElementByXPath("//a[contains(text(),'Duplicate Lead')]").click();
-
+		click(locateElement("xpath", "//a[contains(text(),'Duplicate Lead')]"));
+		//driver.findElementByXPath("//a[contains(text(),'Duplicate Lead')]").click();
 		return new DuplicateLeadPage();
 	}
 
 	@When("Click on delete button")
 	public MyLeadPage clickOnDeleteLeadBtnInViewLeadPage() {
 
-		driver.findElementByXPath("//a[text() ='Delete']").click();
+		click(locateElement("xpath", "//a[text() ='Delete']"));
+		//driver.findElementByXPath("//a[text() ='Delete']").click();
 
 		return new MyLeadPage();
 	}
@@ -70,14 +75,15 @@ public class ViewLeadPage extends SeleniumBase {
 	@Then("Confirm the duplicated lead name as captured name")
 	public ViewLeadPage verifyDuplicatedLeadNameinViewLeadPage() {
 
-		String firstName = driver.findElementById("viewLead_firstName_sp").getText();
+		verifyPartialText(locateElement("id", "viewLead_firstName_sp"), firstResultingName);
+		/*String firstName = driver.findElementById("viewLead_firstName_sp").getText();
 		System.out.println("DuplicatedLeadNameinViewLeadPage :" + firstName);
 		System.out.println("verifyDuplicatedLeadNameinViewLeadPage :" + firstResultingName);
 		if (firstName.contains(firstResultingName)) {
 			System.out.println("My first name is :" + firstName + " and firstname is correct");
 		} else {
 			System.out.println("My first name is :" + firstName + " and firstname is incorrect");
-		}
+		}*/
 
 		return this;
 
@@ -86,13 +92,14 @@ public class ViewLeadPage extends SeleniumBase {
 	@Then("verify mergerid in viewleadpage")
 	public ViewLeadPage verifyMergeLeadId() {
 
-		WebElement ID = driver.findElementById("viewLead_companyName_sp");
+		verifyPartialText(locateElement("id", "viewLead_companyName_sp"), leadId);
+		/*WebElement ID = driver.findElementById("viewLead_companyName_sp");
 		String mergeViewID = ID.getText();
 		if (mergeViewID.contains(leadId)) {
 			System.out.println("your id is correct and ID is: " + mergeViewID);
 		} else {
 			System.out.println("your id is Incorrect and ID is: " + mergeViewID);
-		}
+		}*/
 
 		return this;
 	}
@@ -100,7 +107,8 @@ public class ViewLeadPage extends SeleniumBase {
 	@When("Click on the find lead links to validate id")
 	public FindLeadPage clickOnFindLeadLink() {
 
-		driver.findElementByLinkText("Find Leads").click();
+		click(locateElement("link", "Find Leads"));
+		//driver.findElementByLinkText("Find Leads").click();
 
 		return new FindLeadPage();
 	}

@@ -1,6 +1,6 @@
 Feature: CreateLead
 
-Scenario Outline:TC001 CreateLead Postive TestCases
+Scenario Outline:CreateLead Postive TestCases
 
 And Enter the username as <username>
 And Enter the password as <password>
@@ -20,7 +20,7 @@ Examples:
 |DemoSalesManager|crmsfa|TCS|Vishvanathan|Veerabathiran|Vishvanathan|
 |Democsr|crmsfa|TataConsultancyServices|Vishvanathan|Veerabathiran|Vishvanathan|
 
-Scenario Outline:TC001 CreateLead Negative TestCases
+Scenario Outline:CreateLead Negative TestCases
 
 And Enter the username as <username>
 And Enter the password as <password>

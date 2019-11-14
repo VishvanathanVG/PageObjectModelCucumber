@@ -10,7 +10,8 @@ public class MyHomePage extends SeleniumBase{
 	@When("Click on lead link")
 	public MyLeadPage clickOnLead() {
 		
-		driver.findElementByLinkText("Leads").click();
+		click(locateElement("link", "Leads"));
+		//driver.findElementByLinkText("Leads").click();
 		return new MyLeadPage();
 	}
 	

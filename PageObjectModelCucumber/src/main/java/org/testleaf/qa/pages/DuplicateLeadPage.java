@@ -10,21 +10,23 @@ public class DuplicateLeadPage extends SeleniumBase{
 	@Then("Verify the duplicate lead page titles as (.*)")
 	public DuplicateLeadPage verifyTitleDuplicateLeadPage(String duplicate) {
 		
-		String dupTitle=driver.getTitle();
+		verifyTitle("Duplicate Lead | opentaps CRM");
+		/*String dupTitle=driver.getTitle();
 		if(dupTitle.startsWith(duplicate)) {
 			System.out.println("Your title is: " + dupTitle + " And your title is correct");
 			}
 		else {
 			System.out.println("Your title is: " + dupTitle + " And your title is incorrect");
 		}
-		
+		*/
 		return this;
 	}
 	
 	@When("Click on the create lead button")
 	public ViewLeadPage clickOnSubmitBtnInDuplicateLeadPage() {
 		
-		driver.findElementByName("submitButton").click();
+		click(locateElement("name", "submitButton"));
+		//driver.findElementByName("submitButton").click();
 		
 		return new ViewLeadPage();
 	}
