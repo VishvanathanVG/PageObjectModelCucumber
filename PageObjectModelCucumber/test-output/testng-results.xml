@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="13" passed="13">
   <reporter-output>
   </reporter-output>
-  <suite name="CreateLead Test Automation Page Object Model Cucumber Suite" duration-ms="52541" started-at="2019-11-13T23:48:02 IST" finished-at="2019-11-13T23:48:54 IST">
+  <suite name="CreateLead Test Automation Page Object Model Cucumber Suite" duration-ms="319454" started-at="2019-11-14T08:45:18 IST" finished-at="2019-11-14T08:50:37 IST">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.DeleteLeadRunner@1e2adc7]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.CreateLeadRunner@f93a98]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.DeleteLeadRunner@1921e20]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.DuplicateLeadRunner@34e239]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.EditLeadRunner@46bcd4]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.MergeLeadRunner@b4cef0]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="CreateLead Test Automation Page Object Model Cucumber Test Cases" duration-ms="52541" started-at="2019-11-13T23:48:02 IST" finished-at="2019-11-13T23:48:54 IST">
-      <class name="runner.DeleteLeadRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.DeleteLeadRunner@1e2adc7]" name="setUpClass" is-config="true" duration-ms="375" started-at="2019-11-13T23:48:02 IST" finished-at="2019-11-13T23:48:02 IST">
+    <test name="CreateLead Test Automation Page Object Model Cucumber Test Cases" duration-ms="319454" started-at="2019-11-14T08:45:18 IST" finished-at="2019-11-14T08:50:37 IST">
+      <class name="runner.EditLeadRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.EditLeadRunner@46bcd4]" name="setUpClass" is-config="true" duration-ms="4" started-at="2019-11-14T08:46:44 IST" finished-at="2019-11-14T08:46:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:runner.DeleteLeadRunner@1e2adc7]" name="login" is-config="true" duration-ms="7732" started-at="2019-11-13T23:48:02 IST" finished-at="2019-11-13T23:48:10 IST">
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:runner.EditLeadRunner@46bcd4]" name="login" is-config="true" duration-ms="6468" started-at="2019-11-14T08:46:44 IST" finished-at="2019-11-14T08:46:50 IST">
           <params>
             <param index="0">
               <value>
@@ -25,7 +29,275 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.DeleteLeadRunner@1e2adc7]" name="runScenario" duration-ms="17290" started-at="2019-11-13T23:48:10 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-11-13T23:48:27 IST">
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.EditLeadRunner@46bcd4]" name="runScenario" duration-ms="15774" started-at="2019-11-14T08:46:50 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-11-14T08:47:06 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Edit Lead Positive Test Cases"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Edit Lead Test Scenarios"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:runner.EditLeadRunner@46bcd4]" name="closeBrowser" is-config="true" duration-ms="2167" started-at="2019-11-14T08:47:06 IST" finished-at="2019-11-14T08:47:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:runner.EditLeadRunner@46bcd4]" name="login" is-config="true" duration-ms="5991" started-at="2019-11-14T08:47:08 IST" finished-at="2019-11-14T08:47:14 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://leaftaps.com/opentaps/control/main]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.EditLeadRunner@46bcd4]" name="runScenario" duration-ms="16323" started-at="2019-11-14T08:47:14 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-11-14T08:47:31 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Edit Lead Positive Test Cases"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Edit Lead Test Scenarios"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:runner.EditLeadRunner@46bcd4]" name="closeBrowser" is-config="true" duration-ms="2135" started-at="2019-11-14T08:47:31 IST" finished-at="2019-11-14T08:47:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:runner.EditLeadRunner@46bcd4]" name="login" is-config="true" duration-ms="6638" started-at="2019-11-14T08:47:33 IST" finished-at="2019-11-14T08:47:40 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://leaftaps.com/opentaps/control/main]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.EditLeadRunner@46bcd4]" name="runScenario" duration-ms="16152" started-at="2019-11-14T08:47:40 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-11-14T08:47:56 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Edit Lead Negative Test Cases"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Edit Lead Test Scenarios"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:runner.EditLeadRunner@46bcd4]" name="closeBrowser" is-config="true" duration-ms="2157" started-at="2019-11-14T08:47:56 IST" finished-at="2019-11-14T08:47:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:runner.EditLeadRunner@46bcd4]" name="login" is-config="true" duration-ms="5795" started-at="2019-11-14T08:47:58 IST" finished-at="2019-11-14T08:48:04 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://leaftaps.com/opentaps/control/main]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.EditLeadRunner@46bcd4]" name="runScenario" duration-ms="16827" started-at="2019-11-14T08:48:04 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-11-14T08:48:20 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Edit Lead Negative Test Cases"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Edit Lead Test Scenarios"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:runner.EditLeadRunner@46bcd4]" name="closeBrowser" is-config="true" duration-ms="2171" started-at="2019-11-14T08:48:20 IST" finished-at="2019-11-14T08:48:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.EditLeadRunner@46bcd4]" name="tearDownClass" is-config="true" duration-ms="107" started-at="2019-11-14T08:48:23 IST" finished-at="2019-11-14T08:48:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.EditLeadRunner -->
+      <class name="runner.CreateLeadRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.CreateLeadRunner@f93a98]" name="setUpClass" is-config="true" duration-ms="419" started-at="2019-11-14T08:45:18 IST" finished-at="2019-11-14T08:45:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:runner.CreateLeadRunner@f93a98]" name="login" is-config="true" duration-ms="8237" started-at="2019-11-14T08:45:19 IST" finished-at="2019-11-14T08:45:27 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://leaftaps.com/opentaps/control/main]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.CreateLeadRunner@f93a98]" name="runScenario" duration-ms="16969" started-at="2019-11-14T08:45:27 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-11-14T08:45:44 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC001 CreateLead Postive TestCases"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["CreateLead"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:runner.CreateLeadRunner@f93a98]" name="closeBrowser" is-config="true" duration-ms="2153" started-at="2019-11-14T08:45:44 IST" finished-at="2019-11-14T08:45:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:runner.CreateLeadRunner@f93a98]" name="login" is-config="true" duration-ms="6456" started-at="2019-11-14T08:45:46 IST" finished-at="2019-11-14T08:45:52 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://leaftaps.com/opentaps/control/main]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.CreateLeadRunner@f93a98]" name="runScenario" duration-ms="12679" started-at="2019-11-14T08:45:52 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-11-14T08:46:05 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC001 CreateLead Postive TestCases"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["CreateLead"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:runner.CreateLeadRunner@f93a98]" name="closeBrowser" is-config="true" duration-ms="2106" started-at="2019-11-14T08:46:05 IST" finished-at="2019-11-14T08:46:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:runner.CreateLeadRunner@f93a98]" name="login" is-config="true" duration-ms="5742" started-at="2019-11-14T08:46:07 IST" finished-at="2019-11-14T08:46:13 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://leaftaps.com/opentaps/control/main]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.CreateLeadRunner@f93a98]" name="runScenario" duration-ms="10853" started-at="2019-11-14T08:46:13 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-11-14T08:46:24 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC001 CreateLead Negative TestCases"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["CreateLead"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:runner.CreateLeadRunner@f93a98]" name="closeBrowser" is-config="true" duration-ms="2160" started-at="2019-11-14T08:46:24 IST" finished-at="2019-11-14T08:46:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:runner.CreateLeadRunner@f93a98]" name="login" is-config="true" duration-ms="5605" started-at="2019-11-14T08:46:26 IST" finished-at="2019-11-14T08:46:32 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://leaftaps.com/opentaps/control/main]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.CreateLeadRunner@f93a98]" name="runScenario" duration-ms="10126" started-at="2019-11-14T08:46:32 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-11-14T08:46:42 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC001 CreateLead Negative TestCases"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["CreateLead"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:runner.CreateLeadRunner@f93a98]" name="closeBrowser" is-config="true" duration-ms="2129" started-at="2019-11-14T08:46:42 IST" finished-at="2019-11-14T08:46:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.CreateLeadRunner@f93a98]" name="tearDownClass" is-config="true" duration-ms="163" started-at="2019-11-14T08:46:44 IST" finished-at="2019-11-14T08:46:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.CreateLeadRunner -->
+      <class name="runner.DeleteLeadRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.DeleteLeadRunner@1921e20]" name="setUpClass" is-config="true" duration-ms="4" started-at="2019-11-14T08:49:15 IST" finished-at="2019-11-14T08:49:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:runner.DeleteLeadRunner@1921e20]" name="login" is-config="true" duration-ms="6037" started-at="2019-11-14T08:49:15 IST" finished-at="2019-11-14T08:49:21 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://leaftaps.com/opentaps/control/main]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.DeleteLeadRunner@1921e20]" name="runScenario" duration-ms="17022" started-at="2019-11-14T08:49:21 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-11-14T08:49:38 IST">
           <params>
             <param index="0">
               <value>
@@ -41,11 +313,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:runner.DeleteLeadRunner@1e2adc7]" name="closeBrowser" is-config="true" duration-ms="2386" started-at="2019-11-13T23:48:27 IST" finished-at="2019-11-13T23:48:29 IST">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:runner.DeleteLeadRunner@1921e20]" name="closeBrowser" is-config="true" duration-ms="2098" started-at="2019-11-14T08:49:38 IST" finished-at="2019-11-14T08:49:40 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:runner.DeleteLeadRunner@1e2adc7]" name="login" is-config="true" duration-ms="5781" started-at="2019-11-13T23:48:29 IST" finished-at="2019-11-13T23:48:35 IST">
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:runner.DeleteLeadRunner@1921e20]" name="login" is-config="true" duration-ms="5786" started-at="2019-11-14T08:49:40 IST" finished-at="2019-11-14T08:49:46 IST">
           <params>
             <param index="0">
               <value>
@@ -56,7 +328,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.DeleteLeadRunner@1e2adc7]" name="runScenario" duration-ms="16515" started-at="2019-11-13T23:48:35 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-11-13T23:48:52 IST">
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.DeleteLeadRunner@1921e20]" name="runScenario" duration-ms="17218" started-at="2019-11-14T08:49:46 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-11-14T08:50:03 IST">
           <params>
             <param index="0">
               <value>
@@ -72,15 +344,128 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:runner.DeleteLeadRunner@1e2adc7]" name="closeBrowser" is-config="true" duration-ms="2187" started-at="2019-11-13T23:48:52 IST" finished-at="2019-11-13T23:48:54 IST">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:runner.DeleteLeadRunner@1921e20]" name="closeBrowser" is-config="true" duration-ms="2095" started-at="2019-11-14T08:50:03 IST" finished-at="2019-11-14T08:50:05 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.DeleteLeadRunner@1e2adc7]" name="tearDownClass" is-config="true" duration-ms="111" started-at="2019-11-13T23:48:54 IST" finished-at="2019-11-13T23:48:54 IST">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.DeleteLeadRunner@1921e20]" name="tearDownClass" is-config="true" duration-ms="42" started-at="2019-11-14T08:50:05 IST" finished-at="2019-11-14T08:50:05 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- runner.DeleteLeadRunner -->
+      <class name="runner.DuplicateLeadRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.DuplicateLeadRunner@34e239]" name="setUpClass" is-config="true" duration-ms="3" started-at="2019-11-14T08:48:23 IST" finished-at="2019-11-14T08:48:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:runner.DuplicateLeadRunner@34e239]" name="login" is-config="true" duration-ms="6384" started-at="2019-11-14T08:48:23 IST" finished-at="2019-11-14T08:48:29 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://leaftaps.com/opentaps/control/main]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.DuplicateLeadRunner@34e239]" name="runScenario" duration-ms="19093" started-at="2019-11-14T08:48:29 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-11-14T08:48:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Duplicate Lead Testcases"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Duplicate Lead Test Scenarios"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:runner.DuplicateLeadRunner@34e239]" name="closeBrowser" is-config="true" duration-ms="2140" started-at="2019-11-14T08:48:48 IST" finished-at="2019-11-14T08:48:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:runner.DuplicateLeadRunner@34e239]" name="login" is-config="true" duration-ms="5801" started-at="2019-11-14T08:48:50 IST" finished-at="2019-11-14T08:48:56 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://leaftaps.com/opentaps/control/main]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.DuplicateLeadRunner@34e239]" name="runScenario" duration-ms="16742" started-at="2019-11-14T08:48:56 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-11-14T08:49:13 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Duplicate Lead Testcases"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Duplicate Lead Test Scenarios"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:runner.DuplicateLeadRunner@34e239]" name="closeBrowser" is-config="true" duration-ms="2119" started-at="2019-11-14T08:49:13 IST" finished-at="2019-11-14T08:49:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.DuplicateLeadRunner@34e239]" name="tearDownClass" is-config="true" duration-ms="48" started-at="2019-11-14T08:49:15 IST" finished-at="2019-11-14T08:49:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.DuplicateLeadRunner -->
+      <class name="runner.MergeLeadRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.MergeLeadRunner@b4cef0]" name="setUpClass" is-config="true" duration-ms="4" started-at="2019-11-14T08:50:05 IST" finished-at="2019-11-14T08:50:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:runner.MergeLeadRunner@b4cef0]" name="login" is-config="true" duration-ms="5708" started-at="2019-11-14T08:50:05 IST" finished-at="2019-11-14T08:50:11 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://leaftaps.com/opentaps/control/main]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.MergeLeadRunner@b4cef0]" name="runScenario" duration-ms="24143" started-at="2019-11-14T08:50:11 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-11-14T08:50:35 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Merge Lead Test Cases"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Merge Lead Test Scenarios"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:runner.MergeLeadRunner@b4cef0]" name="closeBrowser" is-config="true" duration-ms="2109" started-at="2019-11-14T08:50:35 IST" finished-at="2019-11-14T08:50:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.MergeLeadRunner@b4cef0]" name="tearDownClass" is-config="true" duration-ms="52" started-at="2019-11-14T08:50:37 IST" finished-at="2019-11-14T08:50:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.MergeLeadRunner -->
     </test> <!-- CreateLead Test Automation Page Object Model Cucumber Test Cases -->
   </suite> <!-- CreateLead Test Automation Page Object Model Cucumber Suite -->
 </testng-results>
