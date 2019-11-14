@@ -35,7 +35,6 @@ public class FindLeadPage extends SeleniumBase {
 	@Then("Select the first resulting lead id")
 	public ViewLeadPage selectFirstListedFindLeadsData() throws InterruptedException {
 		Thread.sleep(2000);
-		
 		WebElement firtLeadElement = locateElement("xpath", "//div[@class='x-grid3-cell-inner x-grid3-col-partyId']//a[1]");
 		String leadid = getElementText(firtLeadElement);
 		leadId =leadid;
@@ -95,6 +94,7 @@ public class FindLeadPage extends SeleniumBase {
 	@When("Enter the phone number as (.*) in find lead page")
 	public FindLeadPage enterPhoneNoInFindLeadPage(String Phonenumber) {
 		
+		clearAndType(locateElement("name", "phoneCountryCode"), "2");
 		clearAndType(locateElement("name", "phoneNumber"),Phonenumber);
 		//driver.findElementByName("phoneNumber").sendKeys(Phonenumber);
 		return this;
