@@ -3,20 +3,20 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-11-14T03:20:11.699Z",
-        "line": 33,
-        "name": "Merge Lead Test Cases",
+        "start_timestamp": "2019-11-14T16:19:31.603Z",
+        "line": 23,
+        "name": "Duplicate Lead Testcases",
         "description": "",
-        "id": "merge-lead-test-scenarios;merge-lead-test-cases;;2",
+        "id": "duplicate-lead-test-scenarios;duplicate-lead-testcases;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 312004785,
+              "duration": 369869059,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "Enter the username as DemoSalesManager",
             "match": {
               "arguments": [
@@ -31,10 +31,10 @@
           },
           {
             "result": {
-              "duration": 163019815,
+              "duration": 215256077,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "Enter the password as crmsfa",
             "match": {
               "arguments": [
@@ -49,10 +49,10 @@
           },
           {
             "result": {
-              "duration": 382737321,
+              "duration": 891212230,
               "status": "passed"
             },
-            "line": 7,
+            "line": 8,
             "name": "Click on login button",
             "match": {
               "location": "LoginPage.clickOnLogin()"
@@ -61,10 +61,10 @@
           },
           {
             "result": {
-              "duration": 2987118714,
+              "duration": 4971151620,
               "status": "passed"
             },
-            "line": 8,
+            "line": 9,
             "name": "Click on Crmsfa",
             "match": {
               "location": "HomePage.clickOnCRMSFA()"
@@ -73,10 +73,10 @@
           },
           {
             "result": {
-              "duration": 1864545758,
+              "duration": 2009137045,
               "status": "passed"
             },
-            "line": 9,
+            "line": 10,
             "name": "Click on lead link",
             "match": {
               "location": "MyHomePage.clickOnLead()"
@@ -85,238 +85,52 @@
           },
           {
             "result": {
-              "duration": 1147130242,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "Click on merge lead links",
-            "match": {
-              "location": "MyLeadPage.clickOnMergeLead()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 359576623,
+              "duration": 1891010663,
               "status": "passed"
             },
             "line": 11,
-            "name": "Click on fromlead icon on merge lead page",
+            "name": "Click on find lead link",
             "match": {
-              "location": "MergeLeadPage.clickOnFromLeadIcon()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 40313850,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "Navigating to window find leads for merge lead",
-            "match": {
-              "location": "MergeLeadPage.navigatingToFindLeadForMergeFirstName()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3043142330,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "Entering the firstname as a in find lead page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "a",
-                  "offset": 26
-                }
-              ],
-              "location": "MergeLeadPage.enterTheFirstNameInFindLeadPageForMerge(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 304096124,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "Click on find lead button in find leads data",
-            "match": {
-              "location": "MergeLeadPage.clickOnFindLeadBtnToFindLeadsData()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1361110325,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "Select the first resulting lead id for firstname",
-            "match": {
-              "location": "MergeLeadPage.selectFirstResultingLeadIdFirstName()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 62326325,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "Back to basewindow after selecting lead id",
-            "match": {
-              "location": "MergeLeadPage.backToBaseWindowsAfterSelectingLeadId()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 342215336,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "Click on tolead icon on merge lead page",
-            "match": {
-              "location": "MergeLeadPage.clickOnToLeadIcon()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 23288369,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "Navigating to window find leads for merge lead",
-            "match": {
-              "location": "MergeLeadPage.navigatingToFindLeadForMergeFirstName()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1302165861,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "Entering the Lastname as c in find lead page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "c",
-                  "offset": 25
-                }
-              ],
-              "location": "MergeLeadPage.enterLastnameToFindLeadData(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 267186302,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "Click on find lead button in find leads data",
-            "match": {
-              "location": "MergeLeadPage.clickOnFindLeadBtnToFindLeadsData()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1331726149,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "Select the first resulting lead id for lastname",
-            "match": {
-              "location": "MergeLeadPage.selectFirstResultingLeadIdLastName()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 39722292,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "Back to basewindow after selecting lead id",
-            "match": {
-              "location": "MergeLeadPage.backToBaseWindowsAfterSelectingLeadId()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1304408119,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "Click on merge lead button in merge lead page",
-            "match": {
-              "location": "MergeLeadPage.clickOnMergeLeadBtnInMergeLeadPage()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1066835883,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "Switch to alert and Accepting the alert",
-            "match": {
-              "location": "MergeLeadPage.switchToAlertAndAcceptAlert()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3858656853,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "verify mergerid in viewleadpage",
-            "match": {
-              "location": "ViewLeadPage.verifyMergeLeadId()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1767417220,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "Click on the find lead links to validate id",
-            "match": {
-              "location": "ViewLeadPage.clickOnFindLeadLink()"
+              "location": "MyLeadPage.clickOnFindLeads()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 398921236,
+              "duration": 451956314,
               "status": "passed"
             },
-            "line": 27,
-            "name": "Enter the captured lead id in find lead page",
+            "line": 12,
+            "name": "Click on Email button in find lead page",
             "match": {
-              "location": "FindLeadPage.enterLeadIdInFindLeadPage()"
+              "location": "FindLeadPage.clickOnEmailInFindLeadPage()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 162617916,
+              "duration": 295202036,
               "status": "passed"
             },
-            "line": 28,
+            "line": 13,
+            "name": "Enter the email id as @gmail.com in find lead page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "@gmail.com",
+                  "offset": 22
+                }
+              ],
+              "location": "FindLeadPage.enterEmailAddressInFindLeadPage(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 286200464,
+              "status": "passed"
+            },
+            "line": 14,
             "name": "Click on find lead button in find lead page",
             "match": {
               "location": "FindLeadPage.clickOnFindLeadBtnFindLeadPage()"
@@ -325,30 +139,281 @@
           },
           {
             "result": {
-              "duration": 183773225,
+              "duration": 3942139030,
               "status": "passed"
             },
-            "line": 29,
-            "name": "Verify the norecords display message as No",
+            "line": 15,
+            "name": "Capture the name of first resulting lead",
+            "match": {
+              "location": "FindLeadPage.captureFirstResultingNameAndSelectInFindLeadPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1814235595,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Click on Duplicate lead button in view lead page",
+            "match": {
+              "location": "ViewLeadPage.clickOnDuplicateLeadBtnInViewLeadPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 58067464,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Verify the duplicate lead page titles as Duplicate",
             "match": {
               "arguments": [
                 {
-                  "val": "No",
-                  "offset": 40
+                  "val": "Duplicate",
+                  "offset": 41
                 }
               ],
-              "location": "FindLeadPage.verifyNoRecordsDisplayInFindLeadPage(String)"
+              "location": "DuplicateLeadPage.verifyTitleDuplicateLeadPage(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3053247905,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Click on the create lead button",
+            "match": {
+              "location": "DuplicateLeadPage.clickOnSubmitBtnInDuplicateLeadPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 123929968,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Confirm the duplicated lead name as captured name",
+            "match": {
+              "location": "ViewLeadPage.verifyDuplicatedLeadNameinViewLeadPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-11-14T16:20:00.218Z",
+        "line": 24,
+        "name": "Duplicate Lead Testcases",
+        "description": "",
+        "id": "duplicate-lead-test-scenarios;duplicate-lead-testcases;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 344016687,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Enter the username as DemoSalesManager",
+            "match": {
+              "arguments": [
+                {
+                  "val": "DemoSalesManager",
+                  "offset": 22
+                }
+              ],
+              "location": "LoginPage.enterUserName(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 216872312,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Enter the password as crmsfa",
+            "match": {
+              "arguments": [
+                {
+                  "val": "crmsfa",
+                  "offset": 22
+                }
+              ],
+              "location": "LoginPage.enterPassword(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 785368331,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Click on login button",
+            "match": {
+              "location": "LoginPage.clickOnLogin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4285351499,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Click on Crmsfa",
+            "match": {
+              "location": "HomePage.clickOnCRMSFA()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2051917806,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Click on lead link",
+            "match": {
+              "location": "MyHomePage.clickOnLead()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2021091108,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Click on find lead link",
+            "match": {
+              "location": "MyLeadPage.clickOnFindLeads()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 437814564,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Click on Email button in find lead page",
+            "match": {
+              "location": "FindLeadPage.clickOnEmailInFindLeadPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 184536937,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Enter the email id as @ in find lead page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "@",
+                  "offset": 22
+                }
+              ],
+              "location": "FindLeadPage.enterEmailAddressInFindLeadPage(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 268545036,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Click on find lead button in find lead page",
+            "match": {
+              "location": "FindLeadPage.clickOnFindLeadBtnFindLeadPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4520843562,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Capture the name of first resulting lead",
+            "match": {
+              "location": "FindLeadPage.captureFirstResultingNameAndSelectInFindLeadPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1592792093,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Click on Duplicate lead button in view lead page",
+            "match": {
+              "location": "ViewLeadPage.clickOnDuplicateLeadBtnInViewLeadPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 99892936,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Verify the duplicate lead page titles as Duplicate",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Duplicate",
+                  "offset": 41
+                }
+              ],
+              "location": "DuplicateLeadPage.verifyTitleDuplicateLeadPage(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2437041136,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Click on the create lead button",
+            "match": {
+              "location": "DuplicateLeadPage.clickOnSubmitBtnInDuplicateLeadPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 107197399,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Confirm the duplicated lead name as captured name",
+            "match": {
+              "location": "ViewLeadPage.verifyDuplicatedLeadNameinViewLeadPage()"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Merge Lead Test Scenarios",
+    "name": "Duplicate Lead Test Scenarios",
     "description": "",
-    "id": "merge-lead-test-scenarios",
+    "id": "duplicate-lead-test-scenarios",
     "keyword": "Feature",
-    "uri": "file:src/test/java/featuresExamples/MergeLeadScenarioOutline.feature",
+    "uri": "file:src/test/java/featuresExamples/DuplicateLeadScenarioOutline.feature",
     "tags": []
   }
 ]
