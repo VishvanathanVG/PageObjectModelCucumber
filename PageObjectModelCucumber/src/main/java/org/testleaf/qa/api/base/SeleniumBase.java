@@ -39,6 +39,8 @@ public class SeleniumBase extends AbstractTestNGCucumberTests implements Browser
 	public static String leadId;
 	public static String MergerID;
 	public static String FirstNameId;
+	public String excelFileName;
+	public String sheetName;
 	
 	
 	int i=1;

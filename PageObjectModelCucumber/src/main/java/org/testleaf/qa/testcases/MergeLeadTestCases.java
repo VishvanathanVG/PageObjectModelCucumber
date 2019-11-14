@@ -16,15 +16,15 @@ public class MergeLeadTestCases extends ProjectSpecificMethods{
 	}
 	
 	@Test(dataProvider="fetchLeadsData")
-	public void runMergeLeadTestCases(String userName,String passWord,String Firstname ,String Lastname) throws InterruptedException {
+	public void runMergeLeadTestCases(String userName,String passWord,String Firstname ,String Lastname, String norecord) throws InterruptedException {
 		
 		LoginPage loginpage = new LoginPage();
 		loginpage.enterUserName(userName).enterPassword(passWord).clickOnLogin().clickOnCRMSFA().clickOnLead().clickOnMergeLead()
-		.clickOnFromLeadIcon(Firstname).clickOnToLeadIcon(Lastname);
-		Thread.sleep(2000);
-		MergeLeadPage mergelead = new MergeLeadPage();
-		mergelead.clickOnMergeLeadBtnInMergeLeadPage().verifyMergeLeadId().clickOnFindLeadLink()
-		.enterLeadIdInFindLeadPage().clickOnFindLeadBtnFindLeadPage().verifyNoRecordsDisplayInFindLeadPageForMergeLead();
+		.clickOnFromLeadIcon().navigatingToFindLeadForMergeFirstName().enterTheFirstNameInFindLeadPageForMerge(Firstname).selectFirstResultingLeadIdFirstName()
+		.backToBaseWindowsAfterSelectingLeadId().clickOnToLeadIcon().navigatingToFindLeadForMergeFirstName().enterLastnameToFindLeadData(Lastname)
+		.selectFirstResultingLeadIdLastName().backToBaseWindowsAfterSelectingLeadId().clickOnMergeLeadBtnInMergeLeadPage().switchToAlertAndAcceptAlert().
+		verifyMergeLeadId().clickOnFindLeadLink().enterLeadIdInFindLeadPage().clickOnFindLeadBtnFindLeadPage().verifyNoRecordsDisplayInFindLeadPage(norecord);
+		
 		
 	}
 	

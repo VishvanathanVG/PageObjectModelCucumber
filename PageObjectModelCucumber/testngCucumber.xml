@@ -4,10 +4,11 @@
 <parameter name="url" value="http://leaftaps.com/opentaps/control/main" ></parameter>
   <test thread-count="5" name="CreateLead Test Automation Page Object Model Cucumber Test Cases">
     <classes>
-     <!--  <class name="runner.CreateLeadRunner"/> -->
-      <!-- <class name="runner.EditLeadRunner"/> -->
-      <!-- <class name="runner.DuplicateLeadRunner"/> -->
+      <class name="runner.CreateLeadRunner"/>
+      <class name="runner.EditLeadRunner"/>
+      <class name="runner.DuplicateLeadRunner"/>
        <class name="runner.DeleteLeadRunner"/>
+       <class name="runner.MergeLeadRunner"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

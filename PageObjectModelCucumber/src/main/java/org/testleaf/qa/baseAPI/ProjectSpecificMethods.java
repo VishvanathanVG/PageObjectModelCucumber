@@ -18,8 +18,8 @@ import cucumber.api.java.en.Given;
 
 public class ProjectSpecificMethods extends SeleniumBase{
 
-	public String excelFileName;
-	public String sheetName;
+	/*public String excelFileName;
+	public String sheetName;*/
 
 	@Parameters({"url"})
 	@BeforeMethod

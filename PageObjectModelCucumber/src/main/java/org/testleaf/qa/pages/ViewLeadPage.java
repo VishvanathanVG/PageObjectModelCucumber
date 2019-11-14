@@ -83,11 +83,12 @@ public class ViewLeadPage extends SeleniumBase {
 
 	}
 
+	@Then("verify mergerid in viewleadpage")
 	public ViewLeadPage verifyMergeLeadId() {
 
 		WebElement ID = driver.findElementById("viewLead_companyName_sp");
 		String mergeViewID = ID.getText();
-		if (mergeViewID.contains(MergerID)) {
+		if (mergeViewID.contains(leadId)) {
 			System.out.println("your id is correct and ID is: " + mergeViewID);
 		} else {
 			System.out.println("your id is Incorrect and ID is: " + mergeViewID);
@@ -96,6 +97,7 @@ public class ViewLeadPage extends SeleniumBase {
 		return this;
 	}
 
+	@When("Click on the find lead links to validate id")
 	public FindLeadPage clickOnFindLeadLink() {
 
 		driver.findElementByLinkText("Find Leads").click();

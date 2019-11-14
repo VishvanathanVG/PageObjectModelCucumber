@@ -23,6 +23,7 @@ public class MyLeadPage extends SeleniumBase{
 		return new FindLeadPage();
 	}
 	
+	@When("Click on merge lead links")
 	public MergeLeadPage clickOnMergeLead() {
 		
 		driver.findElementByLinkText("Merge Leads").click();
