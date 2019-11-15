@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="CreateLead Test Automation Page Object Model Cucumber Suite" duration-ms="59098" started-at="2019-11-14T22:29:35 IST" finished-at="2019-11-14T22:30:34 IST">
+  <suite name="CreateLead Test Automation Page Object Model Cucumber Suite" duration-ms="59835" started-at="2019-11-15T21:46:51 IST" finished-at="2019-11-15T21:47:51 IST">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.DeleteLeadRunner@1e2adc7]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.DuplicateLeadRunner@1e2adc7]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="CreateLead Test Automation Page Object Model Cucumber Test Cases" duration-ms="59098" started-at="2019-11-14T22:29:35 IST" finished-at="2019-11-14T22:30:34 IST">
-      <class name="runner.DeleteLeadRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.DeleteLeadRunner@1e2adc7]" name="setUpClass" is-config="true" duration-ms="374" started-at="2019-11-14T22:29:35 IST" finished-at="2019-11-14T22:29:36 IST">
+    <test name="CreateLead Test Automation Page Object Model Cucumber Test Cases" duration-ms="59835" started-at="2019-11-15T21:46:51 IST" finished-at="2019-11-15T21:47:51 IST">
+      <class name="runner.DuplicateLeadRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.DuplicateLeadRunner@1e2adc7]" name="setUpClass" is-config="true" duration-ms="249" started-at="2019-11-15T21:46:51 IST" finished-at="2019-11-15T21:46:51 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:runner.DeleteLeadRunner@1e2adc7]" name="login" is-config="true" duration-ms="7463" started-at="2019-11-14T22:29:36 IST" finished-at="2019-11-14T22:29:43 IST">
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:runner.DuplicateLeadRunner@1e2adc7]" name="login" is-config="true" duration-ms="8404" started-at="2019-11-15T21:46:51 IST" finished-at="2019-11-15T21:47:00 IST">
           <params>
             <param index="0">
               <value>
@@ -25,27 +25,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.DeleteLeadRunner@1e2adc7]" name="runScenario" duration-ms="20181" started-at="2019-11-14T22:29:43 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-11-14T22:30:03 IST">
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.DuplicateLeadRunner@1e2adc7]" name="runScenario" duration-ms="23059" started-at="2019-11-15T21:47:00 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-11-15T21:47:23 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Delete Lead Test Cases"]]>
+                <![CDATA["Duplicate Lead Testcases"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Delete Lead Test Scenario"]]>
+                <![CDATA["Duplicate Lead Test Scenarios"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:runner.DeleteLeadRunner@1e2adc7]" name="closeBrowser" is-config="true" duration-ms="2099" started-at="2019-11-14T22:30:03 IST" finished-at="2019-11-14T22:30:05 IST">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:runner.DuplicateLeadRunner@1e2adc7]" name="closeBrowser" is-config="true" duration-ms="2081" started-at="2019-11-15T21:47:23 IST" finished-at="2019-11-15T21:47:25 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:runner.DeleteLeadRunner@1e2adc7]" name="login" is-config="true" duration-ms="6090" started-at="2019-11-14T22:30:05 IST" finished-at="2019-11-14T22:30:11 IST">
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:runner.DuplicateLeadRunner@1e2adc7]" name="login" is-config="true" duration-ms="5753" started-at="2019-11-15T21:47:25 IST" finished-at="2019-11-15T21:47:31 IST">
           <params>
             <param index="0">
               <value>
@@ -56,31 +56,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.DeleteLeadRunner@1e2adc7]" name="runScenario" duration-ms="22317" started-at="2019-11-14T22:30:11 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-11-14T22:30:34 IST">
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.DuplicateLeadRunner@1e2adc7]" name="runScenario" duration-ms="17895" started-at="2019-11-15T21:47:31 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-11-15T21:47:48 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Delete Lead Test Cases"]]>
+                <![CDATA["Duplicate Lead Testcases"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Delete Lead Test Scenario"]]>
+                <![CDATA["Duplicate Lead Test Scenarios"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:runner.DeleteLeadRunner@1e2adc7]" name="closeBrowser" is-config="true" duration-ms="257" started-at="2019-11-14T22:30:34 IST" finished-at="2019-11-14T22:30:34 IST">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:runner.DuplicateLeadRunner@1e2adc7]" name="closeBrowser" is-config="true" duration-ms="2136" started-at="2019-11-15T21:47:48 IST" finished-at="2019-11-15T21:47:51 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.DeleteLeadRunner@1e2adc7]" name="tearDownClass" is-config="true" duration-ms="140" started-at="2019-11-14T22:30:34 IST" finished-at="2019-11-14T22:30:34 IST">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.DuplicateLeadRunner@1e2adc7]" name="tearDownClass" is-config="true" duration-ms="132" started-at="2019-11-15T21:47:51 IST" finished-at="2019-11-15T21:47:51 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- runner.DeleteLeadRunner -->
+      </class> <!-- runner.DuplicateLeadRunner -->
     </test> <!-- CreateLead Test Automation Page Object Model Cucumber Test Cases -->
   </suite> <!-- CreateLead Test Automation Page Object Model Cucumber Suite -->
 </testng-results>

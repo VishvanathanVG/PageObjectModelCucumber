@@ -4,15 +4,15 @@
   <parameter name="url" value="http://leaftaps.com/opentaps/control/main"/>
   <test thread-count="5" verbose="5" name="CreateLead Test Automation Page Object Model Cucumber Test Cases(failed)">
     <classes>
-      <class name="runner.DeleteLeadRunner">
+      <class name="runner.DuplicateLeadRunner">
         <methods>
           <include name="login"/>
           <include name="closeBrowser"/>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="1"/>
+          <include name="runScenario" invocation-numbers="0 1"/>
           <include name="tearDownClass"/>
         </methods>
-      </class> <!-- runner.DeleteLeadRunner -->
+      </class> <!-- runner.DuplicateLeadRunner -->
     </classes>
   </test> <!-- CreateLead Test Automation Page Object Model Cucumber Test Cases(failed) -->
 </suite> <!-- Failed suite [CreateLead Test Automation Page Object Model Cucumber Suite] -->
