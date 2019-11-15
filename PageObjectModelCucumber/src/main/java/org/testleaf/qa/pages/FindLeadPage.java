@@ -68,6 +68,7 @@ public class FindLeadPage extends SeleniumBase {
 	
 	@When("Capture the name of first resulting lead")
 	public ViewLeadPage captureFirstResultingNameAndSelectInFindLeadPage() throws InterruptedException {
+		
 		Thread.sleep(2000);
 		WebElement nameElement = locateElement("xpath", "(//div[@class='x-grid3-cell-inner x-grid3-col-firstName']/a)[1]");
 		String Name = getElementText(nameElement); 
