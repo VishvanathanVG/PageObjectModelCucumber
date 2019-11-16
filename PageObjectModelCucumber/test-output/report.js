@@ -1,11 +1,11 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/java/featuresExamples/DuplicateLeadScenarioOutline.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/java/featuresExamples/DeleteLeadScenarioOutline.feature");
 formatter.feature({
-  "name": "Duplicate Lead Test Scenarios",
+  "name": "Delete Lead Test Scenario",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
-  "name": "Duplicate Lead Testcases",
+  "name": "Delete Lead Test Cases",
   "description": "",
   "keyword": "Scenario Outline"
 });
@@ -38,7 +38,11 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "name": "Enter the email id as \u003cEmailAddr\u003e in find lead page",
+  "name": "Click on phone number",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "Enter the phone number as \u003cphonenumebr\u003e in find lead page",
   "keyword": "And "
 });
 formatter.step({
@@ -46,23 +50,27 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "name": "Capture the name of first resulting lead",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "Click on Duplicate lead button in view lead page",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "Verify the duplicate lead page titles as \u003cduplicateTitleName\u003e",
+  "name": "Select the first resulting lead id",
   "keyword": "Then "
 });
 formatter.step({
-  "name": "Click on the create lead button",
+  "name": "Click on delete button",
   "keyword": "When "
 });
 formatter.step({
-  "name": "Confirm the duplicated lead name as captured name",
+  "name": "Click on find lead link",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "Enter the captured lead id in find lead page",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "Click on find lead button in find lead page",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "Verify the norecords display message as \u003cnorecords\u003e",
   "keyword": "Then "
 });
 formatter.examples({
@@ -74,30 +82,22 @@ formatter.examples({
       "cells": [
         "username",
         "password",
-        "EmailAddr",
-        "duplicateTitleName"
+        "phonenumebr",
+        "norecords"
       ]
     },
     {
       "cells": [
         "DemoSalesManager",
         "crmsfa",
-        "@gmail.com",
-        "Duplicate"
-      ]
-    },
-    {
-      "cells": [
-        "DemoSalesManager",
-        "crmsfa",
-        "@",
-        "Duplicate"
+        "2",
+        "No"
       ]
     }
   ]
 });
 formatter.scenario({
-  "name": "Duplicate Lead Testcases",
+  "name": "Delete Lead Test Cases",
   "description": "",
   "keyword": "Scenario Outline"
 });
@@ -172,11 +172,21 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Enter the email id as @gmail.com in find lead page",
+  "name": "Click on phone number",
   "keyword": "And "
 });
 formatter.match({
-  "location": "FindLeadPage.enterEmailAddressInFindLeadPage(String)"
+  "location": "FindLeadPage.clickOnPhoneNoInFindLeadPage()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter the phone number as 2 in find lead page",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "FindLeadPage.enterPhoneNoInFindLeadPage(String)"
 });
 formatter.result({
   "status": "passed"
@@ -192,113 +202,28 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Capture the name of first resulting lead",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "FindLeadPage.captureFirstResultingNameAndSelectInFindLeadPage()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Click on Duplicate lead button in view lead page",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "ViewLeadPage.clickOnDuplicateLeadBtnInViewLeadPage()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Verify the duplicate lead page titles as Duplicate",
+  "name": "Select the first resulting lead id",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "DuplicateLeadPage.verifyTitleDuplicateLeadPage(String)"
+  "location": "FindLeadPage.selectFirstListedFindLeadsData()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click on the create lead button",
+  "name": "Click on delete button",
   "keyword": "When "
 });
 formatter.match({
-  "location": "DuplicateLeadPage.clickOnSubmitBtnInDuplicateLeadPage()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Confirm the duplicated lead name as captured name",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "ViewLeadPage.verifyDuplicatedLeadNameinViewLeadPage()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Duplicate Lead Testcases",
-  "description": "",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "name": "Enter the username as DemoSalesManager",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "LoginPage.enterUserName(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Enter the password as crmsfa",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LoginPage.enterPassword(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Click on login button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "LoginPage.clickOnLogin()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Click on Crmsfa",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "HomePage.clickOnCRMSFA()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Click on lead link",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "MyHomePage.clickOnLead()"
+  "location": "ViewLeadPage.clickOnDeleteLeadBtnInViewLeadPage()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
   "name": "Click on find lead link",
-  "keyword": "When "
+  "keyword": "And "
 });
 formatter.match({
   "location": "MyLeadPage.clickOnFindLeads()"
@@ -307,21 +232,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click on Email button in find lead page",
+  "name": "Enter the captured lead id in find lead page",
   "keyword": "And "
 });
 formatter.match({
-  "location": "FindLeadPage.clickOnEmailInFindLeadPage()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Enter the email id as @ in find lead page",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "FindLeadPage.enterEmailAddressInFindLeadPage(String)"
+  "location": "FindLeadPage.enterLeadIdInFindLeadPage()"
 });
 formatter.result({
   "status": "passed"
@@ -337,51 +252,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Capture the name of first resulting lead",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "FindLeadPage.captureFirstResultingNameAndSelectInFindLeadPage()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Click on Duplicate lead button in view lead page",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "ViewLeadPage.clickOnDuplicateLeadBtnInViewLeadPage()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Verify the duplicate lead page titles as Duplicate",
+  "name": "Verify the norecords display message as No",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "DuplicateLeadPage.verifyTitleDuplicateLeadPage(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Click on the create lead button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "DuplicateLeadPage.clickOnSubmitBtnInDuplicateLeadPage()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Confirm the duplicated lead name as captured name",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "ViewLeadPage.verifyDuplicatedLeadNameinViewLeadPage()"
+  "location": "FindLeadPage.verifyNoRecordsDisplayInFindLeadPage(String)"
 });
 formatter.result({
   "status": "passed"

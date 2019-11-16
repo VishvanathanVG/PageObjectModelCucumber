@@ -1,6 +1,9 @@
 package org.testleaf.qa.pages;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testleaf.qa.api.base.SeleniumBase;
 
 import cucumber.api.java.en.Then;
@@ -34,10 +37,14 @@ public class FindLeadPage extends SeleniumBase {
 	
 	@Then("Select the first resulting lead id")
 	public ViewLeadPage selectFirstListedFindLeadsData() throws InterruptedException {
+		
 		Thread.sleep(2000);
+
 		WebElement firtLeadElement = locateElement("xpath", "//div[@class='x-grid3-cell-inner x-grid3-col-partyId']//a[1]");
 		String leadid = getElementText(firtLeadElement);
 		leadId =leadid;
+		/*wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.elementToBeClickable(locateElement("xpath", "//div[@class='x-grid3-cell-inner x-grid3-col-partyId']//a[1]")));*/
 		click(firtLeadElement);
 		
 		/*WebElement firtLead= driver.findElementByXPath("//div[@class='x-grid3-cell-inner x-grid3-col-partyId']//a[1]");

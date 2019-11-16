@@ -21,5 +21,5 @@ Then Verify the norecords display message as <norecords>
 
 Examples:
 |username|password|phonenumebr|norecords|
-|DemoSalesManager|crmsfa|9|No|
-|DemoSalesManager|crmsfa|9|No|
+|DemoSalesManager|crmsfa|2|No|
+####|DemoSalesManager|crmsfa|9|No|
